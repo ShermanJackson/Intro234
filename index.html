@@ -106,6 +106,14 @@
   .btn:hover { background: #ffc94d; transform: translateY(-2px); }
   .btn-line { background: transparent; color: var(--white); border: 1px solid var(--line); }
   .btn-line:hover { background: var(--panel); border-color: #3a3a3e; }
+  .hero-soon {
+    margin-top: 22px; display: inline-flex; align-items: center; gap: 9px;
+    font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; color: var(--dim);
+    border: 1px dashed #2e2e33; padding: 8px 14px;
+  }
+  .hero-soon .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--solo); animation: soonblink 1.6s infinite; }
+  @keyframes soonblink { 50% { opacity: 0.25; } }
+  @media (prefers-reduced-motion: reduce) { .hero-soon .dot { animation: none; } }
   @media (max-width: 960px) {
     .hero { padding-top: 100px; }
     .hero-cols { grid-template-columns: 1fr; gap: 44px; }
@@ -421,6 +429,7 @@
           <a href="#install" class="btn">Add to Chrome — Free</a>
           <a href="#how" class="btn btn-line">How it works</a>
         </div>
+        <div class="hero-soon"><span class="dot"></span>DESKTOP VERSION — COMING SOON</div>
       </div>
     </div>
 
@@ -467,8 +476,8 @@
 
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span>Mark once <b>//</b> Jump anywhere <b>//</b> Loop the hard bar <b>//</b> Count the band in <b>//</b> Share one map <b>//</b> No account <b>//</b> Nothing leaves your browser <b>//</b>&nbsp;</span>
-    <span>Mark once <b>//</b> Jump anywhere <b>//</b> Loop the hard bar <b>//</b> Count the band in <b>//</b> Share one map <b>//</b> No account <b>//</b> Nothing leaves your browser <b>//</b>&nbsp;</span>
+    <span>Mark once <b>//</b> Jump anywhere <b>//</b> Loop the hard bar <b>//</b> Count the band in <b>//</b> Share one map <b>//</b> No account <b>//</b> Nothing leaves your browser <b>//</b> Desktop version coming soon <b>//</b>&nbsp;</span>
+    <span>Mark once <b>//</b> Jump anywhere <b>//</b> Loop the hard bar <b>//</b> Count the band in <b>//</b> Share one map <b>//</b> No account <b>//</b> Nothing leaves your browser <b>//</b> Desktop version coming soon <b>//</b>&nbsp;</span>
   </div>
 </div>
 
